@@ -3,7 +3,7 @@ all: GAME README.md
 GAME:
 	bash guessinggame.sh
 README.md: guessinggame.sh
-	echo "**Guessing Game**" >> README.md
+	echo "## Guessing Game" >> README.md
 	echo -n "\n**Time of Making**: " >> README.md
 	date >> README.md
 	echo -n "\n**No. of lines in guessinggame.sh:** " >> README.md
