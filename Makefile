@@ -2,7 +2,8 @@ all: GAME README
 
 GAME:
 	bash guessinggame.sh
-README: guessinggame.sh
+README: 
+	guessinggame.sh
 	echo "## Guessing Game" >> README.md
 	echo -n "\n**Time of Making**: " >> README.md
 	date >> README.md
