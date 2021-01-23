@@ -5,7 +5,7 @@ function dircount {
 }
 	
 function fileguess {
-	while [[ $guess != $count ]];do
+	while [[ $guess != $count ]]; do
 		read guess 
 		if [[ $guess < $count ]]; then
 		echo "Less than the actual no. of files"
@@ -13,7 +13,7 @@ function fileguess {
 		echo "More than the actual no. of files"
 		fi
 	done
-	echo "Congratulations..right guess"
+	echo "Congratulations..Correct Guess!!"
 }
 dircount
 echo "Guess the no. of files in the current directory!"
