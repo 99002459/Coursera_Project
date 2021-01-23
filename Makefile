@@ -1,10 +1,13 @@
-all: README.md
+all: GAME README.md
 
+GAME:
+	bash guessinggame.sh
 README.md: guessinggame.sh
-	echo -n "\n**Make date**: " >> README.md
+	echo "**Guessing Game**" >> README.md
+	echo -n "\n**Time of Making**: " >> README.md
 	date >> README.md
-	echo -n "\n**Number of lines in guessinggame.sh:** " >> README.md
-	grep -c '' guessinggame.sh >> README.md
+	echo -n "\n**No. of lines in guessinggame.sh:** " >> README.md
+	cat guessinggame.sh | wc -l >> README.md
 
 clean:
 	rm README.md
