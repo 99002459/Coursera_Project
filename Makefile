@@ -1,8 +1,8 @@
-all: GAME README.md
+all: GAME README
 
 GAME:
 	bash guessinggame.sh
-README.md: guessinggame.sh
+README: guessinggame.sh
 	echo "## Guessing Game" >> README.md
 	echo -n "\n**Time of Making**: " >> README.md
 	date >> README.md
